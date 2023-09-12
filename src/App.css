@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background: linear-gradient(rgb(12, 11, 13), rgb(32, 37, 43));
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(94, 37, 94);
+  border: 7px solid rgb(23, 11, 28);
+  background-clip: content-box;   
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(94, 37, 94);
+  border: 2px solid rgb(0,0,0);
+  border-radius: 5px;
+}
