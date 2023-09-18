@@ -1,0 +1,63 @@
+.image {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgb(40, 0, 53), rgb(18, 0, 30));
+  height: 25em;
+  gap: 10px;
+}
+
+.image .thumbnail {
+  height: 11em;
+  width: 100%;
+}
+
+.titleCell {
+  flex: none;
+  margin-bottom: 20px;
+}
+
+.title {
+  height: 50px !important;
+}
+
+.infoCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.infoCell > div {
+  flex: 1;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 930px) {
+  .image {
+    height: 30em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .image {
+    height: 27em;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .image {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    padding: 10px;
+    height: 298px;
+  }
+  .image :first-child {
+    display: flex;
+    justify-content: center;
+  }
+  .image .thumbnail {
+    height: 100%;
+  }
+}
